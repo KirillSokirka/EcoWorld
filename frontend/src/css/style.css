@@ -63,34 +63,45 @@ body:-webkit-scrollbar-thumb:hover {
     background: #b3b3b3;
 }
 
+@media screen and (max-width: 1000px) {
+    header,
+    footer {
+        padding: 0 3.5em 0;
+    }
+
+    main {
+        padding: 0 3.5em 0;
+    }
+
+}
+
+@media screen and (max-width: 900px){
+    main hr {
+        display: none;
+    }
+}
+
 @media screen and (max-width: 800px) {
     header,
     footer {
-        padding: 0 1em 0;
+        padding: 0 3em 0;
     }
 
     main {
         padding: 0 3em 0;
-    }
-
-    main hr {
-        display: none;
     }
 }
 
 @media screen and (max-width: 700px) {
     header,
     footer {
-        padding: 0 1em 0;
+        padding: 0 2em 0;
     }
 
     main {
         padding: 0 2em 0;
     }
 
-    main hr {
-        display: none;
-    }
 }
 
 @media screen and (max-width: 600px) {
@@ -103,9 +114,6 @@ body:-webkit-scrollbar-thumb:hover {
         padding: 0 1.5em 0;
     }
 
-    main hr {
-        display: none;
-    }
 }
 
 @media screen and (max-width: 500px) {
@@ -116,9 +124,5 @@ body:-webkit-scrollbar-thumb:hover {
 
     main {
         padding: 0 0 0;
-    }
-
-    main hr {
-        display: none;
     }
 }
