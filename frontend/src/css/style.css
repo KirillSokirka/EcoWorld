@@ -1,0 +1,79 @@
+@import url('../css/banner.css');
+@import url('../css/filters.css');
+@import url('../css/footer.css');
+@import url('../css/header.css');
+@import url('../css/menu-page.css');
+
+html,
+body {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    min-height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+header,
+footer,
+main {
+    padding: 0 6em 0;
+}
+
+header,
+footer {
+    flex: none;
+    display: flex;
+    font-family: 'Comfortaa', sans-serif;
+}
+
+main {
+    flex: auto;
+    padding-top: 1em;
+}
+
+main hr {
+    background-color: #7E7878;
+    border: none;
+    height: 0.1em;
+}
+
+body {
+    overflow-y: auto;
+}
+
+body::-webkit-scrollbar {
+    width: 7px;
+}
+
+body::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 25px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 25px;
+}
+
+body:-webkit-scrollbar-thumb:hover {
+    background: #b3b3b3;
+}
+
+@media screen and (max-width: 600px) {
+    header,
+    footer {
+        padding: 0 1em 0;
+    }
+
+    main {
+        padding: 0 0 0;
+    }
+
+    main hr {
+        display: none;
+    }
+}
