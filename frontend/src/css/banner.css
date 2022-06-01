@@ -56,3 +56,18 @@
         font-size: 22px;
     }
 }
+
+@media screen and (max-width: 700px) {
+    
+    .banner {
+        height: 50%;
+    }
+
+    .banner .content .title p  {
+        font-size: 28px;
+    }
+
+    .banner .content .slogan p {
+        font-size: 22px;
+    }
+}
