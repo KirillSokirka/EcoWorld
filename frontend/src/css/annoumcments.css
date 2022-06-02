@@ -1,0 +1,11 @@
+.annoumcments-area {
+    margin-top: 0.25em;
+    background-color: #F2F9F5;
+    display: flex;
+}
+
+.annoumcments-area .annoumcment-block {
+    width: 150px;
+    height: 250px;
+    display: flex;
+}

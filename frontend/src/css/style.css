@@ -2,13 +2,13 @@
 @import url('../css/filters.css');
 @import url('../css/footer.css');
 @import url('../css/header.css');
+@import url('../css/annoumcments.css');
 
 html,
 body {
     margin: 0;
     height: 100%;
     width: 100%;
-    min-height: 100%;
 }
 
 body {
@@ -40,25 +40,25 @@ main hr {
     height: 0.1em;
 }
 
-body {
+main {
     overflow-y: auto;
 }
 
-body::-webkit-scrollbar {
+main::-webkit-scrollbar {
     width: 7px;
 }
 
-body::-webkit-scrollbar-track {
+main::-webkit-scrollbar-track {
     background: #f1f1f1;
     border-radius: 25px;
 }
 
-body::-webkit-scrollbar-thumb {
+main::-webkit-scrollbar-thumb {
     background: #ccc;
     border-radius: 25px;
 }
 
-body:-webkit-scrollbar-thumb:hover {
+main:-webkit-scrollbar-thumb:hover {
     background: #b3b3b3;
 }
 
@@ -71,7 +71,6 @@ body:-webkit-scrollbar-thumb:hover {
     main {
         padding: 0 3.5em 0;
     }
-
 }
 
 @media screen and (max-width: 900px){

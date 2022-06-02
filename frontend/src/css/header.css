@@ -70,6 +70,8 @@
     position: absolute;
     transition: all 0.5s ease;
     display: none;
+    z-index: 1;
+    border-radius: 5px;
 }
 
 .header .menu .dropdown-menu ul {
