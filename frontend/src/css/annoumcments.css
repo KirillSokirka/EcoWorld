@@ -5,6 +5,8 @@
     padding: 0 0.3em 0.3em;
     flex-direction: column;
     justify-content: space-around;
+
+    font-family: 'Comfortaa', sans-serif;
 }
 
 .annoumcments-area .show-more-btn {
@@ -19,7 +21,6 @@
 }
 
 .annoumcments-area .annoumcment-row {
-    width: 100%;
     display: none;
     margin-top: 0.5em;
     justify-content: space-between;
@@ -33,6 +34,7 @@
     width: 150px;
     height: 250px;
     display: flex;
+
     border-radius: 5px;
     background-color: rgba(199, 225, 206, 0.75);
 }
