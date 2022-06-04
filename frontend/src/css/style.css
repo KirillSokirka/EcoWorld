@@ -62,12 +62,42 @@ main:-webkit-scrollbar-thumb:hover {
     background: #b3b3b3;
 }
 
+
+@media screen and (max-width: 2000px) {
+    header,
+    footer,
+    main {
+        padding: 0 14em 0;
+    }
+}
+
+@media screen and (max-width: 1800px) {
+    header,
+    footer,
+    main {
+        padding: 0 12em 0;
+    }
+}
+
+@media screen and (max-width: 1600px) {
+    header,
+    footer,
+    main {
+        padding: 0 10em 0;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    header,
+    footer,
+    main {
+        padding: 0 8em 0;
+    }
+}
+
 @media screen and (max-width: 1000px) {
     header,
-    footer {
-        padding: 0 3.5em 0;
-    }
-
+    footer,
     main {
         padding: 0 3.5em 0;
     }
@@ -81,10 +111,7 @@ main:-webkit-scrollbar-thumb:hover {
 
 @media screen and (max-width: 800px) {
     header,
-    footer {
-        padding: 0 3em 0;
-    }
-
+    footer,
     main {
         padding: 0 3em 0;
     }
@@ -92,14 +119,10 @@ main:-webkit-scrollbar-thumb:hover {
 
 @media screen and (max-width: 700px) {
     header,
-    footer {
-        padding: 0 2em 0;
-    }
-
+    footer,
     main {
         padding: 0 2em 0;
     }
-
 }
 
 @media screen and (max-width: 600px) {
