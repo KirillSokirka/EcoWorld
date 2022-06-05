@@ -3,6 +3,7 @@
 @import url('../css/footer.css');
 @import url('../css/header.css');
 @import url('../css/annoumcments.css');
+@import url('../css/auth.css');
 
 html, body {
     margin: 0;

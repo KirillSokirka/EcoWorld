@@ -17,16 +17,18 @@
             <img src="../../images/planet-earth.svg" alt="Logo">
         </div>
         <div class="menu">
-            <!-- <p>Sign In</p>
-            <p>Sign Up</p> -->
-            <div class="dropdown-menu">
+            <!-- <div class="not-authorized">
+                <a type='button' id="signIn-btn">Sign In</a>
+                <a type='button' id="signUp-btn">Sign Up</a>                    
+            </div> -->
+            <div class="authorized">
                 <div class="header">
                     <a href="#" aria-haspopup="true">Вітаю, username</a>
-                    <img src="../../images/double-down.png" alt="Arrow" id="arrows">
+                    <img alt="Arrow" id="arrows">
                 </div>
                 <div class="content">
                     <ul class="dropdown" aria-label="submenu">
-                        <li><a href="#">Створити оголошення</a></li>
+                        <li><a href="../html/create-announcment.html">Створити оголошення</a></li>
                         <hr>
                         <li><a href="#">Мої оголошення</a></li>
                         <li><a href="#">Вподобані оголошення</a></li>
@@ -44,7 +46,7 @@
         </div>
     </header>
 
-    <main>
+    <main class="main">
         <div class="banner">
             <div class="content">
                 <div class="title">
@@ -121,10 +123,41 @@
         <div>EcoWorld 2022</div>
     </footer>
 
+    <div id="signIn-modal" class="auth-modal">
+
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Вітаємо знову!</p>
+            <form>
+                <input class="info-input" placeholder="Пошта">
+                <input class="info-input" placeholder="Пароль">
+
+                <button type="submit">Вхід</button>
+            </form>
+        </div>
+    
+    </div>
+
+    <div id="signUp-modal" class="auth-modal">
+
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Вітаємо!</p>
+            <input class="info-input" placeholder="Пошта">
+            <input class="info-input" placeholder="Ім'я">
+            <input class="info-input" placeholder="Пароль">
+            <input class="info-input password-again" placeholder="Повторіть пароль">
+
+            <button type="submit">Зареєструватися</button>
+        </div> 
+
+    </div>
+    
 </body>
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script src="../js/filter.js"></script>
+<script src="../js/auth.js"></script>
 <script src="../js/annoumcment.js"></script>
 
 </html>

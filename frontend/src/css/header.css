@@ -23,47 +23,52 @@
     align-items: center;
 }
 
-.header .menu p {
-    padding: 0.5em;
+.header .not-authorized {
+    display: flex;
 }
 
-.header .menu .dropdown-menu a {
+.not-authorized a {
+    margin-right: 0.5em;
+}
+
+.header .menu .authorized a {
     text-decoration: none;
     color: white;
 }
 
-.header .menu .dropdown-menu .header {
+.header .menu .authorized .header {
     display: flex;
     align-items: center;
 }
 
-.header .menu .dropdown-menu .header a {
+.header .menu .authorized .header a {
     margin-left: 0.5em;
 }
 
-.header .menu .dropdown-menu .header img {
+.header .menu .authorized .header img {
     margin-left: 0.5em;
     margin-right: 0;
     max-width: 20px;
     max-height: 20px;
+    content: url("../../images/double-down.png");
 }
 
-.header .menu .dropdown-menu ul a {
+.header .menu .authorized ul a {
     font-size: 14px;
     color: rgba(18, 13, 13, 0.75);
 }
 
-.header .menu .dropdown-menu ul {
+.header .menu .authorized ul {
     list-style: none;
     padding: 0 0.5em 0;
 }
 
-.header .menu .dropdown-menu ul li {
+.header .menu .authorized ul li {
     margin-bottom: 0.5em;
     padding-top: 0.5em;
 }
 
-.header .menu .dropdown-menu .content {
+.header .menu .authorized .content {
     background-color: white;
     visibility: hidden;
     opacity: 0;
@@ -74,22 +79,22 @@
     border-radius: 5px;
 }
 
-.header .menu .dropdown-menu ul {
+.header .menu .authorized ul {
     background-color: rgba(147, 209, 191, 0.5);
     text-align: center;
     margin-top: auto;
     margin-bottom: auto;
 }
 
-.header .menu .dropdown-menu hr {
+.header .menu .authorized hr {
     background-color: rgba(0, 0, 0, 0.5);
     border: 0;
     height: 0.05em;
     margin: 0em -0.5em 0em -0.5em;
 }
 
-.header .menu .dropdown-menu:hover > .content,
-.header .menu .dropdown-menu:focus-within > .content,
+.header .menu .authorized:hover > .content,
+.header .menu .authorized:focus-within > .content,
 .header .menu .content:hover,
 .header .menu .content:focus-within {
     visibility: visible;
@@ -97,14 +102,14 @@
     display: flex;
 }
 
-.header .menu .dropdown-menu:hover > .header
-.header .menu .dropdown-menu:focus-within > .header
+.header .menu .authorized:hover > .header
+.header .menu .authorized:focus-within > .header
 .header .menu .header:hover,
 .header .menu .header:hover img {
     transform: rotate(180deg);
 }
 
-header .menu .dropdown-menu li {
+header .menu .authorized li {
     clear: both;
     width: 100%;
 }
