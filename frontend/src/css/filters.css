@@ -90,6 +90,7 @@ li {
     flex-direction: column;
     position: absolute;
     width: 15%;
+    z-index: 10;
 }
 
 .filter-block .content .search {
