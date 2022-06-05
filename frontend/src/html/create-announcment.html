@@ -6,8 +6,7 @@
     <title>EcoWorld</title>
 
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet/less" type="text/css" href="../css/announcment-creation.less" />
-    <script src="less.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="../css/announcment-creation.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Comfortaa">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 </head>
@@ -48,12 +47,34 @@
         <div class="announcment-creation-wrapper">
             <form>
                 <div class="form__group field">
-                    <input type="input" class="form__field" placeholder="Заголовок оголошення" name="name" id='name' required />
+                    <input type="input" class="form__field" placeholder="Заголовок оголошення" name="name" id='name'
+                        required />
                     <label for="name" class="form__label">Заголовок оголошення</label>
-                  </div>
-                <textarea type="text" rows="5" cols="60" name="text" placeholder="Опис оголошення"></textarea>
-                <input type="text" placeholder="Локація місця прибрання">
-                <input type="text" placeholder="Час та дата прибрання">
+                </div>
+                
+                <div class="form__group field">
+                    <input type="input" class="form__field big" placeholder="Опис оголошення" name="description" id="description"></textarea>
+                    <label for="name" class="form__label">Опис оголошення</label>
+                </div>       
+
+                <div class="form__group field">
+                    <input type="input" class="form__field" placeholder="Місце прибрання" name="location" id='location'
+                        required />
+                    <label for="location" class="form__label">Місце прибрання</label>
+                </div>
+                <div class="form__group field">
+                    <input type="input" class="form__field" placeholder="Дата та час прибрання" name="date" id='date'
+                        required />
+                    <label for="date" class="form__label">Дата та час прибрання</label>
+                </div>
+                <div class="form__group field file">
+                    <input type="file" class="file__field" placeholder="Дата та час прибрання" name="file" id='file' 
+                    data-multiple-caption="{count} files selected" multiple required />
+                    <label for="file" class="file__label" >Завантажте фото сміття</label>
+                </div>
+                <div class="form__group">
+                    <button type="submit" class="form__btn">Розмістити оголошення</button>
+                </div>
             </form>
         </div>
     </main>
@@ -69,5 +90,6 @@
 </body>
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="../js/files.js"></script>
 
 </html>
