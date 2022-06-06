@@ -20,9 +20,41 @@
             margin-top: 1em;
 
             .hr {
-                
+                display: flex;
+                margin-top: -0.1em;
+                margin-left: 0;
+                margin-right: 0;
+                color: rgba(0, 0, 0, 0.7);;
             }
         }   
 
+        .info {
+            margin-top: 1em;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+
+            .label {
+                color: rgba(0, 0, 0, 0.8);
+                font-size: 1em;
+            }
+
+            p {
+                margin: 0.5em 0.4em 0 0.4em;
+                font-size: 1.25em;
+            }
+
+            .description {
+                .desc__header {
+                    display: flex;
+                    color: rgba(0, 0, 0, 0.75);
+
+                    .p {
+                        margin: 0;
+                        font-size: 1.4em;
+                    }
+                }
+        }
+      
     }
 }
