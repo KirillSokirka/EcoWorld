@@ -22,6 +22,7 @@
   padding: 15px 2.5em 0 0;
   margin-bottom: 10px;
   width: 50%;
+  font-family: 'Comfortaa', sans-serif;
 }
 
 .form__field {
@@ -34,7 +35,6 @@
   outline: 0;
   font-size: 1em;
   width: 100%;
-  font-family: 'Comfortaa', sans-serif;
   color: rgba(0, 0, 0, 0.5);
   padding: 7px 11em 7px 5px;
   background: rgba(147, 209, 191, 0.3);
@@ -53,16 +53,12 @@
 }
 
 .form__field.big {
-  font-family: inherit;
   width: 100%;
   border: 0;
   border-radius: 5px;
   outline: 0;
   font-size: 1em;
-  font-family: 'Comfortaa', sans-serif;
-  color: rgba(0, 0, 0, 0.5);
   padding: 7px 11em 5em 5px;
-  background: rgba(147, 209, 191, 0.3);
 
   &::placeholder {
     color: transparent;
@@ -156,7 +152,6 @@
 .form__group.field.file {
   padding: 10px 5.5em 0 0;
   width: 50%;
-  
 }
 
 .file__label {
@@ -186,5 +181,83 @@
   color: rgba(93, 95, 101, 0.7);
   background-color: rgba(147, 209, 191, 0.7);
   font-family: 'Comfortaa', sans-serif;
+}
 
+
+@media screen and (max-width: 500px) {
+  
+  .form-group {
+    width: 80%;
+  }
+
+  .form__group .form__btn {
+    font-size: 0.8em;
+  }
+
+  .file__field+.file__label {
+    font-size: 0.9em;
+  }
+  
+  .form__field:placeholder-shown ~ .form__label {
+    font-size: 0.9em;  
+  }
+
+  .form__field.big:placeholder-shown ~ .form__label {
+    font-size: 0.9em;  
+  }
+
+  .form__field {
+    padding: 7px 10em 7px 5px;
+  }
+
+  .form__field.big {
+    padding: 7px 9em 5em 5px;
+  }
+
+  .form__field {
+    font-size: 0.9em;
+  }
+}
+
+
+@media screen and (max-width: 400px) {
+
+  .announcment-creation-wrapper form {
+    margin-left: 1em;
+  }
+
+  .form__group {
+    width: 40%;
+  }
+
+  .form__group.field.file {
+    width: 45%;
+  }
+
+  .form__group .form__btn {
+    padding: 10px 10px;
+    font-size: 0.8em;
+  }
+
+  .file__field+.file__label {
+    font-size: 0.8em;
+  }
+  
+  .form__field:placeholder-shown ~ .form__label {
+    font-size: 0.8em;  
+  }
+
+  .form__field.big:placeholder-shown ~ .form__label {
+    font-size: 0.8em;  
+  }
+
+  .form__field {
+    padding: 7px 10em 7px 5px;
+    font-size: 0.9em;
+
+  }
+
+  .form__field.big {
+    padding: 7px 9em 5em 5px;
+  }
 }
