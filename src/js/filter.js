@@ -1,9 +1,9 @@
-const wrapper = document.querySelector(".wrapper"),
-selectBtn = wrapper.querySelector(".select-btn"),
-searchInp = wrapper.querySelector("input"),
-options = wrapper.querySelector(".options");
+const wrapperCity = document.querySelector(".wrapper.cities"),
+selectBtn = wrapperCity.querySelector(".select-btn"),
+searchInp = wrapperCity.querySelector("input"),
+options = wrapperCity.querySelector(".options");
 
-let cities = ["Kyiv", "Lviv", "Odesa", "Dnipro", "Donetsk", "Kherson", "Poltava",
+let cities = ["Київ", "Львів", "Одеса", "Дніпро", "Донець", "Херсон", "Полтава",
               ];
 
 function addCity(selecteCity) {
@@ -14,12 +14,13 @@ function addCity(selecteCity) {
         options.insertAdjacentHTML("beforeend", li);
     });
 }
+
 addCity();
 
 function updateName(selectedLi) {
     searchInp.value = "";
     addCity(selectedLi.innerText);
-    wrapper.classList.remove("active");
+    wrapperCity.classList.remove("active");
     selectBtn.firstElementChild.innerText = selectedLi.innerText;
 }
 
@@ -35,4 +36,56 @@ searchInp.addEventListener("keyup", () => {
     options.innerHTML = arr ? arr : `<p style="margin-top: 10px;">Oops! City not found</p>`;
 });
 
-selectBtn.addEventListener("click", () => wrapper.classList.toggle("active"));
+selectBtn.addEventListener("click", () => wrapperCity.classList.toggle("active"));
+
+const wrapperPopular = document.querySelector(".wrapper.popular"),
+selectBtnPopular = wrapperPopular.querySelector(".select-btn"),
+optionsPopular = wrapperPopular.querySelector(".options");
+
+let popular = ["Найбільш", "Найменш"];
+
+function addPopular(selecteCity) {
+    optionsPopular.innerHTML = "";
+    popular.forEach(city => {
+        let isSelected = city == selecteCity ? "selected" : "";
+        let li = `<li onclick="updatePopular(this)" class="${isSelected}">${city}</li>`;
+        optionsPopular.insertAdjacentHTML("beforeend", li);
+    });
+}
+
+addPopular();
+
+function updatePopular(selectedLi) {
+    addPopular(selectedLi.innerText);
+    wrapperPopular.classList.remove("active");
+    selectBtnPopular.firstElementChild.innerText = selectedLi.innerText;
+}
+
+selectBtnPopular.addEventListener("click", () => wrapperPopular.classList.toggle("active"));
+
+
+const wrapperTime = document.querySelector(".wrapper.time"),
+selectBtnTime = wrapperTime.querySelector(".select-btn"),
+optionsTime = wrapperTime.querySelector(".options");
+
+let time = ["Місяць", "Тиждень"];
+
+function addTime(selecteCity) {
+    optionsTime.innerHTML = "";
+    time.forEach(city => {
+        let isSelected = city == selecteCity ? "selected" : "";
+        let li = `<li onclick="updateTime(this)" class="${isSelected}">${city}</li>`;
+        optionsTime.insertAdjacentHTML("beforeend", li);
+    });
+}
+
+addTime();
+
+function updateTime(selectedLi) {
+    addPopular(selectedLi.innerText);
+    wrapperTime.classList.remove("active");
+    selectBtnTime.firstElementChild.innerText = selectedLi.innerText;
+}
+
+selectBtnTime.addEventListener("click", () => wrapperTime.classList.toggle("active"));
+

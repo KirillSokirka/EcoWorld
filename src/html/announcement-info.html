@@ -26,8 +26,7 @@
                     <ul class="dropdown" aria-label="submenu">
                         <li><a href="create-announcment.html">Створити оголошення</a></li>
                         <hr>
-                        <li><a href="#">Мої оголошення</a></li>
-                        <li><a href="#">Вподобані оголошення</a></li>
+                        <li><a href="liked-announcement.html">Вподобані оголошення</a></li>
                         <hr>
                         <li><a href="#">Вихід</a></li>
                     </ul>
@@ -65,13 +64,13 @@
                     <p class="info__text" id="people">10 небайдужих</p>
                 </div>
 
-                <div class="buttons" id="btn__big_screen">
+                <div class="buttons big__screen" id="btn__big_screen">
                     <button class="apply__btn">Відгукнутися</button>
                     <a type="button"><img class="like__image" src="../../images/heart.svg"></a>
                 </div>
             </div>
 
-            <div class="info__description">
+            <div class="info__description" id="desc__small_screen">
                 <div class="desc__header">
                     <p class="desc__header__title">Опис</p>
                     <img class="desc__header__img">
@@ -91,20 +90,42 @@
                 <hr class="hr" />
             </div>
 
-            <div class="swiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <img src="../../images/rubbish-images.jpeg">
+            <div class="big__screen_grid">
+                <div class="swiper">
+
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="../../images/rubbish-images.jpeg">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="../../images/rubbish-images.jpeg">
+                        </div>
                     </div>
-                    <div class="swiper-slide">
-                        <img src="../../images/rubbish-images.jpeg">
-                    </div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
                 </div>
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
+                <div class="info__description" id="desc__big_screen">
+                    <div class="desc__header">
+                        <p class="desc__header__title">Опис</p>
+                        <img class="desc__header__img">
+                    </div>
+                    <div class="desc__content" id="desc_content_big" style="display: none;">
+                        <div class="desc__content__text">
+                            На цьому суботнику ми будемо прибирати чудову набережну нашого міста.<br>
+                            Рекомендую взяти з собою:
+                            рукавички,
+                            мішки для сміття,
+                            термос з чаєм та канапки
+                        </div>
+                        <div class="desc__content__author">
+                            Автор оголошення: Олена
+                        </div>
+                    </div>
+                    <hr class="hr" />
+                </div>
             </div>
 
-            <div class="buttons" class="btn__small_screen">
+            <div class="buttons" id="btn__small_screen">
                 <button class="apply__btn">Відгукнутися</button>
                 <a type="button"><img class="like__image" src="../../images/heart.svg"></a>
             </div>

@@ -6,8 +6,13 @@
 .main .wrapper {
   width: 100%;
   height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   font-family: 'Comfortaa', sans-serif;
   position: relative;
   background-color: rgba(147, 209, 191, 0.3);
@@ -29,6 +34,8 @@
 }
 
 .main .wrapper .wrapper__info__content .title .hr {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin-top: -0.1em;
   margin-left: 0;
@@ -38,9 +45,16 @@
 
 .main .wrapper .wrapper__info__content .info {
   margin-top: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 .main .wrapper .wrapper__info__content .info .label {
@@ -58,6 +72,8 @@
 }
 
 .main .wrapper .info__description .desc__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   color: rgba(0, 0, 0, 0.75);
 }
@@ -72,12 +88,16 @@
   max-width: 20px;
   max-height: 20px;
   margin-left: auto;
-  align-self: flex-end;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
 }
 
 .main .wrapper .info__description .desc__content {
   display: none;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .main .wrapper .info__description .desc__content .desc__content__text {
@@ -92,42 +112,102 @@
 }
 
 .main .wrapper .info__description .hr {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin-top: 0.3em;
   color: rgba(0, 0, 0, 0.7);
 }
 
-.main .wrapper .swiper {
+.main .wrapper .big__screen_grid {
+  margin-top: 1em;
+}
+
+.main .wrapper .big__screen_grid .info__description .desc__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: rgba(0, 0, 0, 0.75);
+}
+
+.main .wrapper .big__screen_grid .info__description .desc__header .desc__header__title {
+  margin: 0;
+  font-size: 1.25em;
+}
+
+.main .wrapper .big__screen_grid .info__description .desc__header .desc__header__img {
+  content: url("../../images/arrow-down.svg");
+  max-width: 20px;
+  max-height: 20px;
+  margin-left: auto;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.main .wrapper .big__screen_grid .info__description .desc__content {
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.main .wrapper .big__screen_grid .info__description .desc__content .desc__content__text {
+  font-size: 1em;
+  margin: 0.5em 0 0 0;
+}
+
+.main .wrapper .big__screen_grid .info__description .desc__content .desc__content__author {
+  font-size: 0.85em;
+  margin: 0.5em 0 0 0;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.main .wrapper .big__screen_grid .info__description .hr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 0.3em;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.main .wrapper .big__screen_grid .swiper {
   height: 300px;
   border-radius: 10px;
   margin: 0 0 1em 0;
   position: relative;
 }
 
-.main .wrapper .swiper .swiper-button-next,
-.main .wrapper .swiper .swiper-button-prev {
+.main .wrapper .big__screen_grid .swiper .swiper-button-next,
+.main .wrapper .big__screen_grid .swiper .swiper-button-prev {
   color: rgba(0, 0, 0, 0.86);
 }
 
-.main .wrapper .swiper .swiper-button-next {
+.main .wrapper .big__screen_grid .swiper .swiper-button-next {
   margin-right: 1em;
 }
 
-.main .wrapper .swiper .swiper-button-prev {
+.main .wrapper .big__screen_grid .swiper .swiper-button-prev {
   margin-left: 1em;
 }
 
-.main .wrapper .swiper .swiper-slide {
+.main .wrapper .big__screen_grid .swiper .swiper-slide {
   border-radius: 10px;
   position: relative;
   width: 100%;
   margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 
-.main .wrapper .swiper .swiper-slide img {
+.main .wrapper .big__screen_grid .swiper .swiper-slide img {
   border-radius: 10px;
   max-width: 100%;
   max-height: 100%;
@@ -136,13 +216,18 @@
   height: 100%;
   position: absolute;
   width: 90%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.main .wrapper .buttons.big__screen {
+  margin-top: 1em;
+  margin-left: 0em;
 }
 
 .main .wrapper .buttons {
   margin-bottom: 0.5em;
   border: 0;
-  display: flex;
 }
 
 .main .wrapper .buttons .apply__btn {
@@ -157,9 +242,15 @@
 .main .wrapper .buttons a {
   max-width: 40px;
   max-height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .main .wrapper .buttons a .like__image {
@@ -167,32 +258,116 @@
   height: 35px;
 }
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1920px) {
   .main .wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row-reverse;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
   }
-  .main .wrapper .info .label {
+  .main .wrapper .wrapper__info__content .info .label {
+    font-size: 1.15em;
+  }
+  .main .wrapper .wrapper__info__content .info .info__text {
+    font-size: 1.45em;
+  }
+  .main .wrapper .wrapper__info__content .title {
+    font-size: 1.5em;
+  }
+  .main .wrapper .big__screen_grid .swiper {
+    width: 900px;
+    height: 700px;
+  }
+  .main .wrapper .big__screen_grid .info__description .desc__header__title {
+    font-size: 1.4em;
+  }
+  .main .wrapper .big__screen_grid .info__description .desc__content .desc__content__text {
+    font-size: 1.3em;
+  }
+  .main .wrapper .big__screen_grid .info__description .desc__content .desc__content__author {
+    font-size: 1em;
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  .main .wrapper .wrapper__info__content .info .label {
+    font-size: 1em;
+  }
+  .main .wrapper .wrapper__info__content .info .info__text {
+    font-size: 1.35em;
+  }
+  .main .wrapper .wrapper__info__content .title {
+    font-size: 1.5em;
+  }
+  .main .wrapper .big__screen_grid .info__description .desc__header__title {
     font-size: 1.1em;
   }
-  .main .wrapper .info .info__text {
-    font-size: 1.35em;
-  }
-  .main .wrapper .info__description .desc__header__title {
-    font-size: 1.35em;
-  }
-  .main .wrapper .info__description .desc__content .desc__content__text {
+  .main .wrapper .big__screen_grid .info__description .desc__content .desc__content__text {
     font-size: 1.2em;
   }
-  .main .wrapper .info__description .desc__content .desc__content__author {
+  .main .wrapper .big__screen_grid .info__description .desc__content .desc__content__author {
     font-size: 0.95em;
   }
-  .main .wrapper .title {
-    font-size: 1.6em;
+  .main .wrapper .big__screen_grid .swiper {
+    width: 700px;
+    height: 600px;
   }
-  .main .wrapper .swiper {
-    width: 400px;
-    height: 300px;
+}
+
+@media screen and (max-width: 1400px) {
+  .main .wrapper .big__screen_grid .swiper {
+    width: 600px;
+    height: 550px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .main .wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+  .main .wrapper .wrapper__info__content .info .label {
+    font-size: 0.95em;
+  }
+  .main .wrapper .wrapper__info__content .info .info__text {
+    font-size: 1.05em;
+  }
+  .main .wrapper .wrapper__info__content .title {
+    font-size: 1.2em;
+  }
+  .main .wrapper .big__screen_grid {
+    margin-right: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main .wrapper .big__screen_grid .info__description .desc__header__title {
+    font-size: 1.1em;
+  }
+  .main .wrapper .big__screen_grid .info__description .desc__content .desc__content__text {
+    font-size: 1.2em;
+  }
+  .main .wrapper .big__screen_grid .info__description .desc__content .desc__content__author {
+    font-size: 0.95em;
+  }
+  .main .wrapper .big__screen_grid .swiper {
+    width: 520px;
+    height: 450px;
+  }
+  .main .wrapper .buttons#btn__small_screen {
+    display: none;
   }
   .main .wrapper .buttons .apply__btn {
     font-size: 1.35em;
@@ -209,14 +384,22 @@
 
 @media screen and (max-width: 900px) {
   .main .wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
-  .main .wrapper .info .label {
+  .main .wrapper .wrapper__info__content .info .label {
     font-size: 1.1em;
   }
-  .main .wrapper .info .info__text {
+  .main .wrapper .wrapper__info__content .info .info__text {
     font-size: 1.35em;
+  }
+  .main .wrapper .wrapper__info__content .title {
+    font-size: 1.6em;
   }
   .main .wrapper .info__description .desc__header__title {
     font-size: 1.35em;
@@ -227,15 +410,21 @@
   .main .wrapper .info__description .desc__content .desc__content__author {
     font-size: 0.95em;
   }
-  .main .wrapper .title {
-    font-size: 1.6em;
+  .main .wrapper .big__screen_grid .info__description .desc__header__title {
+    font-size: 1.35em;
   }
-  .main .wrapper .swiper {
+  .main .wrapper .big__screen_grid .info__description .desc__content .desc__content__text {
+    font-size: 1.2em;
+  }
+  .main .wrapper .big__screen_grid .info__description .desc__content .desc__content__author {
+    font-size: 0.95em;
+  }
+  .main .wrapper .big__screen_grid .swiper {
     width: 100%;
     height: 450px;
   }
-  .main .wrapper .buttons #btn__small_screen {
-    display: flex;
+  .main .wrapper .buttons#btn__big_screen {
+    display: none;
   }
   .main .wrapper .buttons .apply__btn {
     font-size: 1.35em;
@@ -251,26 +440,27 @@
 }
 
 @media screen and (max-width: 750px) {
-  .main .wrapper .info .label {
+  .main .wrapper .wrapper__info__content .info .label {
     font-size: 1em;
   }
-  .main .wrapper .info .info__text {
+  .main .wrapper .wrapper__info__content .info .info__text {
     font-size: 1.25em;
   }
-  .main .wrapper .info__description .desc__header__title {
+  .main .wrapper .wrapper__info__content .title {
+    font-size: 1.5em;
+  }
+  .main .wrapper .big__screen_grid .info__description .desc__header__title {
     margin: 0;
     font-size: 1.25em;
   }
-  .main .wrapper .info__description .desc__content .desc__content__text {
+  .main .wrapper .big__screen_grid .info__description .desc__content .desc__content__text {
     font-size: 1em;
   }
-  .main .wrapper .info__description .desc__content .desc__content__author {
+  .main .wrapper .big__screen_grid .info__description .desc__content .desc__content__author {
     font-size: 0.85em;
   }
-  .main .wrapper .title {
-    font-size: 1.5em;
-  }
-  .main .wrapper .swiper {
+  .main .wrapper .big__screen_grid .swiper {
+    width: 100%;
     height: 400px;
   }
   .main .wrapper .buttons .apply__btn {
@@ -287,14 +477,14 @@
 }
 
 @media screen and (max-width: 650px) {
-  .main .wrapper .swiper {
+  .main .wrapper .big__screen_grid .swiper {
     height: 350px;
   }
 }
 
 @media screen and (max-width: 500px) {
-  .swiper {
-    height: 300px;
+  .main .wrapper .big__screen_grid .swiper {
+    height: 350px;
   }
 }
 /*# sourceMappingURL=announcment-info.css.map */

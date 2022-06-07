@@ -69,6 +69,14 @@
     content: url("../../images/heart.svg");
 }
 
+.image-part .heart-image-liked {
+    max-width: 25px;
+    max-height: 25px;
+    position: absolute;
+    margin-top: 0.7em;
+    content: url("../../images/orange-heart.svg");
+}
+
 .image-part .person-info {
     position: absolute;
     margin-top: 0.7em;
