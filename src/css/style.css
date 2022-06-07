@@ -1,9 +1,9 @@
-@import url('../css/banner.css');
-@import url('../css/filters.css');
-@import url('../css/footer.css');
-@import url('../css/header.css');
-@import url('../css/annoumcments.css');
-@import url('../css/auth.css');
+@import url('banner.css');
+@import url('filters.css');
+@import url('footer.css');
+@import url('header.css');
+@import url('annoumcments.css');
+@import url('auth.css');
 
 html, body {
     margin: 0;

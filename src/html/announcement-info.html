@@ -14,7 +14,7 @@
 <body>
     <header class="header">
         <div class="logo">
-            <img src="../../images/planet-earth.svg" alt="Logo">
+            <a href="../../index.html"><img alt="Logo"></a>
         </div>
         <div class="menu">
             <div class="authorized">
@@ -24,7 +24,7 @@
                 </div>
                 <div class="content">
                     <ul class="dropdown" aria-label="submenu">
-                        <li><a href="../html/create-announcment.html">Створити оголошення</a></li>
+                        <li><a href="create-announcment.html">Створити оголошення</a></li>
                         <hr>
                         <li><a href="#">Мої оголошення</a></li>
                         <li><a href="#">Вподобані оголошення</a></li>
@@ -35,8 +35,8 @@
             </div>
         </div>
         <div class="mobile-menu">
-            <a href="../html/menu-page.html">
-                <img src="../../images/menu-hambuger.svg" class="menu-button" alt="Menu">
+            <a href="menu-page.html">
+                <img class="menu-button" alt="Menu">
             </a>
         </div>
         </div>
@@ -44,24 +44,31 @@
 
     <main class="main">
         <div class="wrapper">
-            <div class="title">
-                Допоможіть прибрати набережну
-                <hr class="hr" />
-            </div>
+            <div class="wrapper__info__content">
+                <div class="title">
+                    Допоможіть прибрати набережну
+                    <hr class="hr" />
+                </div>
 
-            <div class="info">
-                <label class="" for="location">Адреса:</label>
-                <p class="info__text" id="location">м. Васильків, вул Зарічна</p>
-            </div>
+                <div class="info">
+                    <label class="label" for="location">Адреса:</label>
+                    <p class="info__text" id="location">м. Васильків, вул Зарічна</p>
+                </div>
 
-            <div class="info">
-                <label class="" for="date">Час проведення:</label>
-                <p class="info__text" id="date">20 травня 2022 об 11:00</p>
-            </div>
+                <div class="info">
+                    <label class="label" for="date">Час проведення:</label>
+                    <p class="info__text" id="date">20 травня 2022 об 11:00</p>
+                </div>
 
-            <div class="info">
-                <label class="" for="people">Вже відгукнулося:</label>
-                <p class="info__text" id="people">10 небайдужих</p>
+                <div class="info">
+                    <label class="label" for="people">Вже відгукнулося:</label>
+                    <p class="info__text" id="people">10 небайдужих</p>
+                </div>
+
+                <div class="buttons" id="btn__big_screen">
+                    <button class="apply__btn">Відгукнутися</button>
+                    <a type="button"><img class="like__image" src="../../images/heart.svg"></a>
+                </div>
             </div>
 
             <div class="info__description">
@@ -96,6 +103,12 @@
                 <div class="swiper-button-prev"></div>
                 <div class="swiper-button-next"></div>
             </div>
+
+            <div class="buttons" class="btn__small_screen">
+                <button class="apply__btn">Відгукнутися</button>
+                <a type="button"><img class="like__image" src="../../images/heart.svg"></a>
+            </div>
+
         </div>
     </main>
 

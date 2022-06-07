@@ -6,50 +6,42 @@ let announcements = [
         title: 'Зробимо дворик більш затишним!!!',
         personCount: 12,
         locationInfo: 'м. Васильків, вул Покровська 29',
-        dateInfo: '22.04.2022 15:00'
+        dateInfo: '22.04.2022 15:00',
+        image: 'images/place-image1.png',
+        link: '#'
     },
     {
         title: 'Допоможіть прибрати набережну',
         personCount: 12,
         locationInfo: 'м. Васильків, вул Зарічна',
-        dateInfo: '20.05.2022 11:00'
+        dateInfo: '20.05.2022 11:00',
+        image: 'images/rubbish-images.jpeg',
+        link: 'src/html/announcement-info.html'
     },
     {
         title: 'Пошук людей для прибирання',
         personCount: 12,
         locationInfo: 'м. Васильків, вул Декабристів 88',
-        dateInfo: '19.04.2022 14:30'
+        dateInfo: '19.04.2022 14:30',
+        image: 'images/place-image1.png',
+        link: '#'
     },
     {
         title: 'Допоможіть прибрати набережну',
         personCount: 12,
         locationInfo: 'м. Васильків, вул Покровська 29',
-        dateInfo: '19.04.2022 14:30'
+        dateInfo: '19.04.2022 14:30',
+        image: 'images/place-image1.png',
+        link: '#'
     },
     {
         title: 'Пошук людей для прибирання',
         personCount: 12,
         locationInfo: 'м. Васильків, вул Зарічна',
-        dateInfo: '22.04.2022 15:00'
+        dateInfo: '22.04.2022 15:00',
+        image: 'images/place-image1.png',
+        link: '#'
     },
-    // {
-    //     title: 'Пошук людей для прибирання',
-    //     personCount: 12,
-    //     locationInfo: 'м. Васильків, вул Зарічна',
-    //     dateInfo: '22.04.2022 15:00'
-    // },
-    // {
-    //     title: 'Пошук людей для прибирання',
-    //     personCount: 12,
-    //     locationInfo: 'м. Васильків, вул Зарічна',
-    //     dateInfo: '22.04.2022 15:00'
-    // },
-    // {
-    //     title: 'Пошук людей для прибирання',
-    //     personCount: 12,
-    //     locationInfo: 'м. Васильків, вул Зарічна',
-    //     dateInfo: '22.04.2022 15:00'
-    // },
 ]
 
 function configureAnnouncementsOnScreen(size) {
@@ -67,7 +59,7 @@ function configureAnnouncementsOnScreen(size) {
 
         rows[rowCount] += ` <div class="annoumcment-block">
                                 <div class="image-part">
-                                    <img src="../../images/place-image1.png">
+                                    <a href=${item.link}><img src=${item.image}></a>
                                     <img class="heart-image">
                                     <div class="person-info">
                                         <p>${item.personCount}</p>

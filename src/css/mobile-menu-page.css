@@ -26,6 +26,7 @@
     color: #453E3E;
     text-decoration-line: underline; 
     text-underline-offset: 0.21em;
+    cursor: pointer;
 }
 
 .mobile-menu-page .links-area .link>*:first-child {
